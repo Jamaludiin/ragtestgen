@@ -1,0 +1,12 @@
+# secrets
+.env
+# local data (kept in the private study-data repository)
+bench/
+runs/
+results/
+*.exec
+# build artefacts
+__pycache__/
+*.pyc
+ragtestgen/java/*.class
+.DS_Store

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "RAGTestGen: A Complexity-Prioritized Retrieval-Augmented Tool for Generating JUnit Test Cases for Java Programs"
+type: software
+authors:
+  - family-names: Naufal
+    given-names: Muhammad
+  - family-names: Nuh
+    given-names: Jamal Abdullahi
+  - family-names: Koh
+    given-names: Tieng Wei
+  - family-names: Jaharadak
+    given-names: Adam Amril
+  - family-names: Lawal
+    given-names: Babangida
+  - family-names: Ali
+    given-names: Mohamed Abdullahi
+year: 2026
+repository-code: "https://github.com/Jamaludiin/ragtestgen"
+notes: "Manuscript under review. Update this file with the DOI when published."
