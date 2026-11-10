@@ -1,0 +1,17 @@
+program,prod_files,randoop_files,other_test_files,classes_compiled,loc
+ATMProject,2,0,34,2,351
+Account,4,2,0,3,242
+ArrayPartitions,1,0,0,1,59
+Binary-Search-Tree,3,2,1,3,416
+BoundedBuffers,5,2,0,5,130
+CruiseControl,4,2,0,4,547
+DiningPhilosopher,1,0,0,3,62
+Disjoint-Set,1,4,0,1,102
+RedBlackTree,2,2,0,3,850
+accountsubtype,6,2,0,6,256
+atmProject2,1,2,0,1,178
+clean,4,2,0,4,189
+deadlocks,1,0,0,2,45
+electricitybill,1,2,0,1,91
+nestedmonitor,3,2,0,6,149
+vendMach,1,0,9,1,327

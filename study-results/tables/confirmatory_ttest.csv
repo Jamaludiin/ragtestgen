@@ -1,0 +1,4 @@
+comparison,metric,n,mean_diff,t,p,cohens_dz
+prio50 vs naive50,line_pct,40,15.697,3.4272,0.001451,0.542
+prio50 vs naive50,branch_pct,40,14.762,3.1066,0.003521,0.491
+prio50 vs naive50,instr_pct,40,15.734,3.4587,0.001328,0.547

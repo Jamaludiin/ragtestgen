@@ -1,0 +1,13 @@
+comparison,condition_a,condition_b,metric,n_pairs,median_a,median_b,median_diff,wins,ties,losses,W,z,p,cliffs_delta,magnitude,note,p_holm,significant_0.05
+prio50 vs naive50,prio50,naive50,yield,40,1.0,1.0,0.0,12,28,0,0,-3.0214,0.00252,0.218,small,,0.01008,True
+prio50 vs naive50,prio50,naive50,compile_rate,40,1.0,1.0,0.0,5,26,9,42.0,-0.6284,0.52975,-0.088,negligible,,0.52975,False
+prio50 vs naive50,prio50,naive50,pass_rate,38,0.88,1.0,0.0,10,11,17,111.5,-1.8521,0.06402,-0.172,small,,0.12804,False
+prio50 vs naive50,prio50,naive50,line_pct,40,52.94,33.66,14.82,25,9,6,89.0,-3.1063,0.00189,0.321,small,,0.00945,True
+prio50 vs naive50,prio50,naive50,branch_pct,40,34.11,25.41,15.84,25,8,7,105.0,-2.9646,0.00303,0.241,small,,0.01008,True
+prio50 vs naive50,prio50,naive50,instr_pct,40,48.15,26.62,11.74,26,9,5,85.0,-3.1845,0.00145,0.314,small,,0.0087,True
+full vs prio50,full,prio50,yield,48,1.0,1.0,0.0,10,26,12,115.0,-0.3572,0.72091,-0.081,negligible,,1.0,False
+full vs prio50,full,prio50,compile_rate,48,1.0,1.0,0.0,8,30,10,68.0,-0.7404,0.45903,-0.049,negligible,,1.0,False
+full vs prio50,full,prio50,pass_rate,45,0.94,0.89,0.0,18,12,15,257.0,-0.4111,0.68101,-0.009,negligible,,1.0,False
+full vs prio50,full,prio50,line_pct,48,52.59,52.94,0.0,15,17,16,210.5,-0.7251,0.46838,-0.066,negligible,,1.0,False
+full vs prio50,full,prio50,branch_pct,48,33.33,34.88,0.0,14,22,12,165.0,-0.254,0.79948,-0.046,negligible,,1.0,False
+full vs prio50,full,prio50,instr_pct,48,49.22,48.15,0.0,15,13,20,270.0,-0.7289,0.46607,-0.085,negligible,,1.0,False

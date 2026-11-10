@@ -1,0 +1,4 @@
+model,family,n,median_yield,median_compile_rate,median_pass_rate,median_line_pct,median_branch_pct,median_instr_pct,median_completion_tokens
+gptoss120b,GPT-OSS,48,1.0,1.0,0.97,48.13,34.34,46.08,2505
+gptoss20b,GPT-OSS,48,1.0,1.0,0.88,46.85,33.33,38.39,1966
+qwen3_6_27b,Qwen3,40,0.69,1.0,1.0,38.28,28.57,42.0,1734

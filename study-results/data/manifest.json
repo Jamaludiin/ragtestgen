@@ -1,0 +1,145 @@
+{
+ "generated_utc": "2026-09-10T10:09:06Z",
+ "study": {
+  "conditions": [
+   "full",
+   "prio50",
+   "naive50"
+  ],
+  "models": {
+   "gptoss120b": {
+    "short": "gptoss120b",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "family": "GPT-OSS",
+    "params_b": 120,
+    "hosted": "cloud",
+    "reasoning_effort": "low",
+    "max_tokens": 16000,
+    "batch": null
+   },
+   "gptoss20b": {
+    "short": "gptoss20b",
+    "provider": "groq",
+    "model": "openai/gpt-oss-20b",
+    "family": "GPT-OSS",
+    "params_b": 20,
+    "hosted": "cloud",
+    "reasoning_effort": "low",
+    "max_tokens": 16000,
+    "batch": null
+   },
+   "qwen3_6_27b": {
+    "short": "qwen3_6_27b",
+    "provider": "groq",
+    "model": "qwen/qwen3.6-27b",
+    "family": "Qwen3",
+    "params_b": 27,
+    "hosted": "cloud",
+    "reasoning_effort": "none",
+    "max_tokens": 1000,
+    "batch": 1
+   }
+  },
+  "programs": [
+   "ATMProject",
+   "Account",
+   "ArrayPartitions",
+   "Binary-Search-Tree",
+   "BoundedBuffers",
+   "CruiseControl",
+   "DiningPhilosopher",
+   "Disjoint-Set",
+   "RedBlackTree",
+   "accountsubtype",
+   "atmProject2",
+   "clean",
+   "deadlocks",
+   "electricitybill",
+   "nestedmonitor",
+   "vendMach"
+  ],
+  "design": "3 conditions x 3 models x 16 programs",
+  "expected_runs": 144,
+  "collected_runs": 144
+ },
+ "controls": {
+  "temperature": 0.2,
+  "tests_per_method": 4,
+  "max_targets": 15,
+  "batch_methods_per_request": 4,
+  "retrieval": {
+   "chunk_chars": 500,
+   "stride": 400,
+   "n_results": 10,
+   "embedding": "all-MiniLM-L6-v2 (ChromaDB ONNX)"
+  },
+  "prompt_budget_chars": 20000
+ },
+ "derived_columns": {
+  "compile_rate": "tests_compiled / tests_generated",
+  "pass_rate": "tests_passed / tests_compiled",
+  "yield": "tests_generated / tests_expected",
+  "line_pct": "100 * line_covered / (line_covered + line_missed), from JaCoCo suite.exec",
+  "branch_pct": "100 * branch_covered / (branch_covered + branch_missed)"
+ },
+ "integrity": {
+  "runs_with_tests": 136,
+  "runs_without_tests": 8,
+  "gaps": [
+   {
+    "condition": "naive50",
+    "program": "DiningPhilosopher",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED"
+   },
+   {
+    "condition": "naive50",
+    "program": "Disjoint-Set",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for mo"
+   },
+   {
+    "condition": "naive50",
+    "program": "RedBlackTree",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for mo"
+   },
+   {
+    "condition": "naive50",
+    "program": "accountsubtype",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for mo"
+   },
+   {
+    "condition": "naive50",
+    "program": "atmProject2",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for mo"
+   },
+   {
+    "condition": "naive50",
+    "program": "electricitybill",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for mo"
+   },
+   {
+    "condition": "naive50",
+    "program": "nestedmonitor",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for mo"
+   },
+   {
+    "condition": "naive50",
+    "program": "vendMach",
+    "model": "qwen3_6_27b",
+    "error": "HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.6-27b` in organization `org_REDACTED; HTTP 429: {\"error\":{\"message\":\"Rate limit reached for mo"
+   }
+  ],
+  "note": "Runs without tests are provider failures (rate limits / network), not model results. They are retained in runs.csv with status 'no_tests' and an error string, and MUST be excluded from generation-quality means and reported separately."
+ },
+ "environment": {
+  "python": "3.10.10",
+  "java": "java version \"22\" 2024-03-19"
+ }
+}

@@ -1,0 +1,17 @@
+program,loc,n,median_generated,median_compiled,median_line_pct,median_branch_pct
+ATMProject,351,3,48,16,21.43,25.71
+Account,242,3,32,32,61.67,30.0
+ArrayPartitions,59,3,8,8,100.0,100.0
+Binary-Search-Tree,416,3,44,32,46.85,25.58
+BoundedBuffers,130,3,28,16,67.31,33.33
+CruiseControl,547,3,60,49,78.34,71.21
+DiningPhilosopher,62,3,8,8,37.5,0.0
+Disjoint-Set,102,3,24,24,24.0,12.5
+RedBlackTree,850,3,60,3,18.13,11.89
+accountsubtype,256,3,60,43,77.46,63.64
+atmProject2,178,3,32,32,53.57,62.86
+clean,189,3,28,27,84.31,80.0
+deadlocks,45,3,8,4,23.53,0.0
+electricitybill,91,3,12,12,20.69,66.67
+nestedmonitor,149,3,40,40,82.35,100.0
+vendMach,327,3,8,8,56.0,57.14

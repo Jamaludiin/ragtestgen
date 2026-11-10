@@ -1,0 +1,13 @@
+comparison,metric,n,shapiro_W,shapiro_p,normal_at_0.05
+prio50 vs naive50,yield,40,0.6236,0.0,False
+prio50 vs naive50,compile_rate,40,0.7536,1e-06,False
+prio50 vs naive50,pass_rate,38,0.9184,0.0088,False
+prio50 vs naive50,line_pct,40,0.9543,0.106892,True
+prio50 vs naive50,branch_pct,40,0.9736,0.463487,True
+prio50 vs naive50,instr_pct,40,0.9459,0.054654,True
+full vs prio50,yield,48,0.8214,4e-06,False
+full vs prio50,compile_rate,48,0.7407,0.0,False
+full vs prio50,pass_rate,45,0.9217,0.004821,False
+full vs prio50,line_pct,48,0.8836,0.000193,False
+full vs prio50,branch_pct,48,0.7579,0.0,False
+full vs prio50,instr_pct,48,0.8796,0.000147,False

@@ -2,7 +2,7 @@
 
 RAGTestGen generates JUnit 5 test suites for Java programs with a large language model. It reads the program with the Java compiler's own parser, chooses which methods to test by cyclomatic complexity, retrieves the most similar source fragments from a vector index and places them in the prompt, then compiles, runs and measures the generated tests with JaCoCo.
 
-This repository holds the tool and the study scripts. The benchmark programs, the 144 raw runs and the derived dataset are kept in a separate private repository ([`ragtestgen-study-data`](https://github.com/Jamaludiin/ragtestgen-study-data)) because the programs come from third-party collections and the runs are large.
+This repository holds the tool, the study scripts and the derived dataset of the study (`study-results/`). The curated benchmark programs and the raw model outputs are kept in a separate private repository because most programs come from the Software-artifact Infrastructure Repository (SIR), whose terms do not permit redistribution; they are available from the authors on request.
 
 ## How it works
 
@@ -46,6 +46,21 @@ python3 scripts/aggregate.py && python3 scripts/analyse.py
 ```
 
 Each run directory contains the raw model answer (`raw.txt`), the parsed tests (`testsrc/`), the compiled classes, the JaCoCo execution file (`suite.exec`), and `gen.json` / `eval.json` with every count the paper reports. A run is marked `no_tests` when the request never reached the model (rate limit or network); such runs are excluded from the statistics and listed in `results/data/manifest.json`.
+
+## Study results
+
+`study-results/` is the frozen output of the study reported in the paper (10 September 2026):
+
+| Path | Contents |
+|---|---|
+| `study-results/data/runs.csv` | One row per condition x program x model, 144 rows. The analysis unit. |
+| `study-results/data/tests.csv` | One row per generated test, 3,274 rows, with execution status and coverage. |
+| `study-results/data/programs.csv` | The 16 programs with lines of code and pre-existing test counts. |
+| `study-results/data/manifest.json` | Model settings, control variables, derived-column formulas, and the 8 runs that never reached the model. |
+| `study-results/tables/*.csv` | Every table in the paper; `pairs_*.csv` holds each paired difference behind each hypothesis test. |
+| `study-results/ANALYSIS.md` | The generated statistical report. |
+
+To regenerate it from raw runs, place them in `runs/` and run `scripts/aggregate.py` then `scripts/analyse.py`; the output goes to `results/`, which is git-ignored so that the frozen copy is not overwritten by accident.
 
 ## Statistics
 
